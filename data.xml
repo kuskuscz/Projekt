@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformace.xsl"?>
+<škola název="Středí škola" ulice="Komenská 12" město="Praha" PSČ="11100" infolinka="225587988" web="www.skolass.cz"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+>
+<třída id="1.A">
+        <žák id="1">
+
+            <jméno>Dan</jméno>
+            <příjmení>Kolář</příjmení>
+            <pohlaví>muž</pohlaví>
+            <datNar>1998-10-05</datNar>
+
+            <kontaktŽák>
+                <spojení>
+                    <mobil>755779999</mobil>
+                    <pevnáLinka>235555666</pevnáLinka>
+                    <email>kolar@gmail.com</email>
+                </spojení>
+                <adresa>
+                    <ulice>Konrádova 4</ulice>
+                    <město>Praha</město>
+                    <PSČ>16000</PSČ>
+                </adresa>
+            </kontaktŽák>
+
+            <kontaktRodič>
+                <spojení>
+                    <mobil>666888777</mobil>
+                    <pevnáLinka>222477777</pevnáLinka>
+                    <email>bbb@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Konrádova 4</ulice>
+                    <město>Praha</město>
+                    <PSČ>16000</PSČ>
+                </adresa>
+            </kontaktRodič>
+
+            <poznámky>
+                <prvnipololeti>
+                    <poznámka datum="2016-11-04" zadánoOd="Jana Janská">Nemá tělocvik</poznámka>
+                </prvnipololeti>
+                <druhepololeti>
+                    <poznámka datum="2017-03-01" zadánoOd="Jan Vrhel">Spí</poznámka>
+                </druhepololeti>
+            </poznámky>
+
+            <známky>
+                <prvnipololeti>
+                    <predmět id="Čj">
+                        <známka>
+                            <datumUdělení>2016-12-12</datumUdělení>
+                            <hodnota>2</hodnota>
+                            <váha>5</váha>
+                            <téma>Literatura</téma>
+                        </známka>
+                    </predmět>
+
+                    <predmět id="Ma">
+                        <známka>
+                            <datumUdělení>2017-11-08</datumUdělení>
+                            <hodnota>3</hodnota>
+                            <váha>8</váha>
+                            <téma>Čtrvtletní práce</téma>
+                        </známka>
+                    </predmět>
+                </prvnipololeti>
+
+                <druhepololeti>
+                    <predmět id="Aj">
+                        <známka>
+                            <datumUdělení>2016-03-22</datumUdělení>
+                            <hodnota>5</hodnota>
+                            <váha>3</váha>
+                            <téma>Travelling</téma>
+                        </známka>
+                    </predmět>
+                </druhepololeti>
+
+            </známky>
+        </žák>
+
+
+
+
+
+
+
+
+
+        <žák id="2">
+
+            <jméno>Jana</jméno>
+            <příjmení>Nováková</příjmení>
+            <pohlaví>žena</pohlaví>
+            <datNar>1999-10-05</datNar>
+
+            <kontaktŽák>
+                <spojení>
+                    <mobil>755778889</mobil>
+                    <pevnáLinka>235888666</pevnáLinka>
+                    <email>njana@gmail.com</email>
+                </spojení>
+                <adresa>
+                    <ulice>Konrádova 54</ulice>
+                    <město>Praha</město>
+                    <PSČ>16000</PSČ>
+                </adresa>
+            </kontaktŽák>
+
+            <kontaktRodič>
+                <spojení>
+                    <mobil>666555557</mobil>
+                    <pevnáLinka>255557777</pevnáLinka>
+                    <email>55555@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Konrádova 54</ulice>
+                    <město>Praha</město>
+                    <PSČ>16000</PSČ>
+                </adresa>
+            </kontaktRodič>
+
+            <poznámky>
+                <druhepololeti>
+                    <poznámka datum="2017-04-01" zadánoOd="Hana Horkelová">Nemá úkol</poznámka>
+                    <poznámka datum="2017-05-01" zadánoOd="Jan Novák">Drzost</poznámka>
+                </druhepololeti>
+            </poznámky>
+
+            <známky>
+                <prvnipololeti>
+                    <predmět id="Čj">
+                        <známka>
+                            <datumUdělení>2016-12-12</datumUdělení>
+                            <hodnota>4</hodnota>
+                            <váha>5</váha>
+                            <téma>Literatura</téma>
+                        </známka>
+                    </predmět>
+
+                    <predmět id="Ma">
+                        <známka>
+                            <datumUdělení>2017-11-08</datumUdělení>
+                            <hodnota>1</hodnota>
+                            <váha>8</váha>
+                            <téma>Čtrvtletní práce</téma>
+                        </známka>
+                    </predmět>
+                </prvnipololeti>
+
+                <druhepololeti>
+                    <predmět id="Aj">
+                        <známka>
+                            <datumUdělení>2016-03-22</datumUdělení>
+                            <hodnota>2</hodnota>
+                            <váha>3</váha>
+                            <téma>Travelling</téma>
+                        </známka>
+                    </predmět>
+                </druhepololeti>
+
+            </známky>
+        </žák>
+
+
+        <žák id="3">
+
+            <jméno>Adriana</jméno>
+            <příjmení>Havlová</příjmení>
+            <pohlaví>žena</pohlaví>
+            <datNar>1999-01-05</datNar>
+
+            <kontaktŽák>
+                <spojení>
+                    <mobil>752278882</mobil>
+                    <pevnáLinka>235222222</pevnáLinka>
+                    <email>ahavlova@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Alšova 55</ulice>
+                    <město>Praha</město>
+                    <PSČ>18000</PSČ>
+                </adresa>
+            </kontaktŽák>
+
+            <kontaktRodič>
+                <spojení>
+                    <mobil>666777557</mobil>
+                    <pevnáLinka>255777777</pevnáLinka>
+                    <email>55555@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Alšova 55</ulice>
+                    <město>Praha</město>
+                    <PSČ>18000</PSČ>
+                </adresa>
+            </kontaktRodič>
+
+            <poznámky>
+                <prvnipololeti>
+                    <poznámka datum="2016-10-01" zadánoOd="Hana Horkelová">Nepřezula se</poznámka>
+                </prvnipololeti>
+            </poznámky>
+
+            <známky>
+                <prvnipololeti>
+                    <predmět id="Čj">
+                        <známka>
+                            <datumUdělení>2016-12-12</datumUdělení>
+                            <hodnota>1</hodnota>
+                            <váha>5</váha>
+                            <téma>Literatura</téma>
+                        </známka>
+                    </predmět>
+
+                    <predmět id="Ma">
+                        <známka>
+                            <datumUdělení>2017-11-08</datumUdělení>
+                            <hodnota>1</hodnota>
+                            <váha>8</váha>
+                            <téma>Čtrvtletní práce</téma>
+                        </známka>
+                    </predmět>
+                </prvnipololeti>
+
+                <druhepololeti>
+                    <predmět id="Aj">
+                        <známka>
+                            <datumUdělení>2016-03-22</datumUdělení>
+                            <hodnota>2</hodnota>
+                            <váha>1</váha>
+                            <téma>Travelling</téma>
+                        </známka>
+                    </predmět>
+                </druhepololeti>
+
+            </známky>
+        </žák>
+
+    </třída>
+
+
+
+    <třída id="1.B">
+        <žák id="4">
+
+            <jméno>Jan</jméno>
+            <příjmení>Pilát</příjmení>
+            <pohlaví>muž</pohlaví>
+            <datNar>1998-01-05</datNar>
+
+            <kontaktŽák>
+                <spojení>
+                    <mobil>752233382</mobil>
+                    <pevnáLinka>233222222</pevnáLinka>
+                    <email>pili@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Hektorova 188</ulice>
+                    <město>Praha</město>
+                    <PSČ>12000</PSČ>
+                </adresa>
+            </kontaktŽák>
+
+            <kontaktRodič>
+                <spojení>
+                    <mobil>666777557</mobil>
+                    <pevnáLinka>255777777</pevnáLinka>
+                    <email>rodic@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Kolova 5</ulice>
+                    <město>Praha</město>
+                    <PSČ>17000</PSČ>
+                </adresa>
+            </kontaktRodič>
+
+            <poznámky>
+                <prvnipololeti>
+                    <poznámka datum="2016-10-01" zadánoOd="Hana Horkelová">Nemá tělocvik</poznámka>
+                </prvnipololeti>
+                <druhepololeti>
+                    <poznámka datum="2017-05-01" zadánoOd="Jan Výtisk">Vyrušuje</poznámka>
+                </druhepololeti>
+            </poznámky>
+
+            <známky>
+                <prvnipololeti>
+                    <predmět id="Čj">
+                        <známka>
+                            <datumUdělení>2016-12-12</datumUdělení>
+                            <hodnota>2</hodnota>
+                            <váha>5</váha>
+                            <téma>Literatura</téma>
+                        </známka>
+                    </predmět>
+
+                    <predmět id="Ma">
+                        <známka>
+                            <datumUdělení>2017-11-08</datumUdělení>
+                            <hodnota>2</hodnota>
+                            <váha>8</váha>
+                            <téma>Čtrvtletní práce</téma>
+                        </známka>
+                    </predmět>
+                </prvnipololeti>
+
+                <druhepololeti>
+                    <predmět id="Aj">
+                        <známka>
+                            <datumUdělení>2016-03-22</datumUdělení>
+                            <hodnota>2</hodnota>
+                            <váha>1</váha>
+                            <téma>Travelling</téma>
+                        </známka>
+                    </predmět>
+                </druhepololeti>
+
+            </známky>
+        </žák>
+
+
+
+
+
+
+
+
+
+        <žák id="5">
+
+            <jméno>Oldřich</jméno>
+            <příjmení>Kotvan</příjmení>
+            <pohlaví>muž</pohlaví>
+            <datNar>1999-01-25</datNar>
+
+            <kontaktŽák>
+                <spojení>
+                    <mobil>752245882</mobil>
+                    <pevnáLinka>2555533222</pevnáLinka>
+                    <email>kotvano@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Lánská 2188</ulice>
+                    <město>Praha</město>
+                    <PSČ>16000</PSČ>
+                </adresa>
+            </kontaktŽák>
+
+            <kontaktRodič>
+                <spojení>
+                    <mobil>777558557</mobil>
+                    <pevnáLinka>222222777</pevnáLinka>
+                    <email>rodic2@seznam.cz</email>
+                </spojení>
+                <adresa>
+                    <ulice>Lánská 2188</ulice>
+                    <město>Praha</město>
+                    <PSČ>16000</PSČ>
+                </adresa>
+            </kontaktRodič>
+
+            <poznámky>
+                <prvnipololeti>
+                    <poznámka datum="2016-11-01" zadánoOd="Jan Novák">Podvádí při testu</poznámka>
+                </prvnipololeti>
+                <druhepololeti>
+                    <poznámka datum="2017-05-01" zadánoOd="Jan Výtisk">Nepřezul se</poznámka>
+                </druhepololeti>
+            </poznámky>
+
+            <známky>
+                <prvnipololeti>
+                    <predmět id="Čj">
+                        <známka>
+                            <datumUdělení>2016-12-12</datumUdělení>
+                            <hodnota>1</hodnota>
+                            <váha>5</váha>
+                            <téma>Literatura</téma>
+                        </známka>
+                    </predmět>
+
+                    <predmět id="Ma">
+                        <známka>
+                            <datumUdělení>2017-11-08</datumUdělení>
+                            <hodnota>5</hodnota>
+                            <váha>8</váha>
+                            <téma>Čtrvtletní práce</téma>
+                        </známka>
+                    </predmět>
+                </prvnipololeti>
+
+                <druhepololeti>
+                    <predmět id="Aj">
+                        <známka>
+                            <datumUdělení>2016-03-22</datumUdělení>
+                            <hodnota>3</hodnota>
+                            <váha>1</váha>
+                            <téma>Travelling</téma>
+                        </známka>
+                    </predmět>
+                </druhepololeti>
+
+            </známky>
+        </žák>
+
+
+    </třída>
+
+</škola>

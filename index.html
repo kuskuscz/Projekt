@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <body bgcolor="#E6E6FA">
+    <head>
+        <title>Elektronický přehled školy</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style >p {text-align:justify}
+            table { border-collapse: collapse; width:800px; border: 1px solid gray }
+            td, th { border: 1px solid gray }
+        </style>
+    </head>   
+
+    <body>
+
+        <div id="container" style="width:800px;background-color: white;margin: 30px auto;padding:20px; ">
+            <article >
+                <header> 
+                    <h1>HTML Dokumentace elektronického přehledu školy</h1>
+
+
+                </header>
+                <nav>
+                    <section>
+
+                        <h2>Obsah</h2>
+                        <ol>
+                            <li><a href="#1">Úvod</a></li>
+                            <li><a href="#2">Metodika</a></li>
+                            <li><a href="#3">Tabulka elementů a atributů</a></li>
+                            <li><a href="#4">Transformace</a></li>
+                            <li><a href="#5">Závěr</a></li>
+                        </ol>
+
+                    </section>
+                </nav>
+                <section>
+                    <h2 id="1"> Úvod </h2>
+                    <p> 
+                        Jako téma k semestrální práci jsem si zvolil nastavení elektronické aplikace, kterou mohou využívat střední a základní školy.
+                        Cílem bylo navrhnout aplikaci tak, aby do ní bylo možno zadávat jak údaje o žácích, tak jejich známky</p>
+
+
+                    <h2 id="2"> Metodika </h2>            
+                    <p> Nechal jsem se inspirovat školním systémem, který jsme měli na gymnáziu. Rozhodl jsem se použít pro návrh této aplikace programy Net Beans a XML Copy editor.
+                    V aplikaci Net Beans jsem napsal html dokumentaci a v aplikaci XML Copy editor jsem vytvořil soubory XML,XSD a XSL. Tyto programy jsem zvolil pro jejich jednoduché 
+                    ovládání a snadnou dostupnost.
+                    </p>
+
+
+
+                    <h2 id="3"> Popis elementů a atributů </h2>
+
+                    <table >
+                        <tr><th>Element</th><th>Popis elementu</th><th>Atributy</th><th>Členy</th></tr>
+                        <tr><td>škola</td><td>Základní element.</td><td>název, ulice, město, PSČ, infolinka, web</td><td>třída</td></tr>
+                        <tr><td>třída</td><td>Třída.</td><td>id</td> <td>žák</td></tr>
+                        <tr><td>žák</td><td>Žák.</td><td>id</td><td>jméno, příjmení, pohlaví, datNar, kontaktŽák, kontaktRodič, poznámky, známky</td></tr>
+                        <tr><td>jméno</td><td>Křestní jméno žáka. </td><td></td><td></td></tr>
+                        <tr><td>příjmení</td><td> Příjmení žáka. </td><td></td><td></td></tr>
+                        <tr><td>pohlaví</td><td>Pohlaví: muž nebo žena.</td><td></td><td></td></tr>
+                        <tr><td>datNar</td><td>Datum narození.</td><td></td><td></td></tr>
+                        <tr><td>kontaktŽák</td><td>Kontakt na žáka.</td><td></td><td>spojení, adresa</td></tr>
+                        <tr><td>spojení</td><td>Mobil, pevná linka, nebo email. </td><td></td><td>mobil, pevná linka, email</td></tr>
+                        <tr><td>mobil</td><td>Telefonní číslo na mobil.  </td><td></td><td></td></tr>
+                        <tr><td>pevnáLinka</td><td>Telefonní číslo na pevnou linku. </td><td></td><td></td></tr>
+                        <tr><td>email</td><td>E-mailová adresa. </td><td></td><td></td></tr>
+                        <tr><td>adresa</td><td>Ulice, město a PSČ bydliště.</td><td></td><td>ulice, město, PSČ</td></tr>
+                        <tr><td>ulice</td><td>Název ulice a číslo popisné. </td><td></td><td></td></tr>
+                        <tr><td>město</td><td>Název města. </td><td></td><td></td></tr>
+                        <tr><td>PSČ</td><td>Poštovní směrovací číslo. </td><td></td><td></td></tr>
+                        <tr><td>kontaktRodič</td><td>Kontakt na rodiče.</td><td></td><td>spojení, adresa</td></tr>
+                        <tr><td>poznámky</td><td>Kolekce poznámek.</td><td></td><td>poznámka</td></tr>
+                        <tr><td>prvnipololeti</td><td>Element rozlišující jednotlivá pololetí. </td><td></td><td>poznámka, předmět</td></tr>
+                        <tr><td>druhepololeti</td><td>Element rozlišující jednotlivá pololetí. </td><td></td><td>poznámka, předmět</td></tr>
+                        <tr><td>poznámka</td><td>Jedna konkrétní poznámka</td><td>datum, zadánoOd</td><td></td></tr>
+                        <tr><td>známky</td><td>Kolekce známek. </td><td></td><td>pololetí1, pololetí2</td></tr>
+                        <tr><td>predmět</td><td>Jeden konkrétní vyučovací předmět. </td><td>id</td><td>známka</td></tr>
+                        <tr><td>známka</td><td>Událost udělení známky.</td><td></td><td>datumUdělení, hodnota, váha, téma</td></tr>
+                        <tr><td>datumUdělení</td><td>Kdy byla známka udělena.</td><td></td><td></td></tr>
+                        <tr><td>hodnota</td><td>Konkrétní známka na stupnici 1-5.</td><td></td><td></td></tr>
+                        <tr><td>váha</td><td>Váha dané známky na stupnici 1-10.</td><td></td><td></td></tr>
+                        <tr><td>téma</td><td>Co bylo předmětem zkoušky. </td><td></td><td></td></tr>
+
+                    </table>
+
+
+
+
+                    <h2 id="4"> Popis transformace</h2>
+                    <p>Transformace poskytuje tyto výstupy:</p>
+                    <ul>
+                        <li>seznam žáků roztříděný dle jednotlivých tříd</li>
+                        <li>známky jednotlivých žáků</li>               
+                        <li>poznámky žáků</li>     
+                        <li>kontakty na žáky, rodiče a jejich trvalá bydliště                </li>     
+                    </ul>       
+                    <h2 id="5"> Závěr </h2>
+                    <p> Tato aplikace by mohla posloužit jako online žákovská knížka, bylo by možné dále doprogramovat například absence, různá upoornění a mnoho dalšího.</p>
+
+                </section>
+
+            </article>
+
+            <footer>
+                <hr/>
+                <i>Vojtěch Frič, projekt na předmět Značkovací jazyky</i>
+            </footer>
+
+
+        </div>
+    </body>
+</html>

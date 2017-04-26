@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="škola">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="třída" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="PSČ" type="xs:integer" use="required"/>
+      <xs:attribute name="infolinka" type="xs:integer" use="required"/>
+      <xs:attribute name="město" type="xs:string" use="required"/>
+      <xs:attribute name="název" type="xs:string" use="required"/>
+      <xs:attribute name="ulice" type="xs:string" use="required"/>
+      <xs:attribute name="web" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="třída">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="žák" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+<xs:simpleType name="typPohlavi">
+<xs:restriction base="xs:string">
+<xs:enumeration value="muž"></xs:enumeration>
+<xs:enumeration value="žena"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>  
+  
+  
+  <xs:element name="žák">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="jméno" type="xs:string"/>
+        <xs:element name="příjmení" type="xs:string"/>
+        <xs:element name="pohlaví" type="typPohlavi"/>
+        <xs:element name="datNar" type="xs:date"/>
+        <xs:element ref="kontaktŽák"/>
+        <xs:element ref="kontaktRodič"/>
+        <xs:element ref="poznámky"/>
+        <xs:element ref="známky"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kontaktŽák">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="spojení"/>
+        <xs:element ref="adresa"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spojení">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="mobil" type="xs:integer"/>
+        <xs:element name="pevnáLinka" type="xs:string"/>
+        <xs:element name="email" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="adresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ulice" type="xs:string"/>
+        <xs:element name="město" type="xs:string"/>
+        <xs:element name="PSČ" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kontaktRodič">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="spojení"/>
+        <xs:element ref="adresa"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poznámky">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" >
+        <xs:element ref="prvnipololeti" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="druhepololeti" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prvnipololeti">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="poznámka" minOccurs="0"/>
+        <xs:element ref="predmět" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poznámka">
+    <xs:complexType mixed="true">
+      <xs:attribute name="datum" type="xs:date" use="required"/>
+      <xs:attribute name="zadánoOd" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="druhepololeti">
+    <xs:complexType>
+      <xs:sequence >
+        <xs:element ref="poznámka" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="predmět" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="známky">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="prvnipololeti" maxOccurs="1"/>
+        <xs:element ref="druhepololeti" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="predmět">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="známka"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="známka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="datumUdělení" type="xs:date"/>
+        
+        <xs:element name="hodnota">
+ <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="5"/>
+    </xs:restriction>
+  </xs:simpleType>        
+        </xs:element>
+        
+        <xs:element name="váha" >
+        <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>        
+        </xs:element>
+        
+        
+        <xs:element name="téma" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  
+</xs:schema>
